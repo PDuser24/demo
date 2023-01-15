@@ -1,0 +1,44 @@
+
+/* brouser resroncive ................................................. */
+@media(max-width:959px){
+
+    .fixd {
+      width: 177px;
+      line-height: 28px;
+      display: block;
+      margin: auto;
+    }
+  
+    .form {
+  
+      max-width: 605px;
+  
+    }
+  
+    .form_logo {
+      padding: 13px 0px;
+      
+    }
+  
+  
+  }
+  @media(max-width:599px){
+    .form {
+      max-width: 100%;
+    }
+    .aria {
+      display: none;
+    }
+    .menu ul a {
+  
+      margin-right: 8px;
+  
+    }
+    .v-btn {
+      display: none;
+    }
+  
+  }
+  
+  
+  

@@ -1,0 +1,123 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'responciv.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> input_box</title>
+</head>
+<body>
+
+   
+  <header id="top_ber">
+    <div class="top_ber-wraper">
+      <div class="logo_write"><p>PrivateDelights </p></div>
+      <div class="menu">
+        <ul>
+          <li><a href=""> <i class="fa-solid fa-location-dot"></i><span class="aria">Locations</span></a></li>
+          <li><a href=""> <i class="fa-solid fa-magnifying-glass"></i><span class="aria">Search</span> </a></li>
+          <li><a href=""><i class="fas fa-user-circle"></i> <span class="aria">Login</span> </a></li>
+          
+
+        </ul>
+      </div>
+  </header>
+  
+  
+  <div class="login-wrapper" id="loginForm">
+
+    <form method="POST" id="my-form" class="form">
+      {% csrf_token %}
+      
+      <div class="nev_logo">
+        <div class="form_logo"><p>Login </p></div>
+      </div>
+
+
+
+      <div class="wrapper">
+        <div class="input-data">
+           <input type="text" id="Name" name="name" required>
+           <div class="underline"></div>
+           <label class="laval1">User name</label>
+           <div class="massage"><p>usernames are case-sensitive</p></div>
+          
+        </div>
+        <div class="input-data">
+          
+            <input type="password" class="password" id="password" name="password" required>
+            <div class="eyeg"><i class=" show fa fa-eye"></i>
+              <i class=" hide fa fa-eye-slash"></i></div>
+              
+            <div class="underline"></div>
+            <label>Password
+            </label>
+            <div class="massagee"><p>passwords are case-sensitive</p></div>
+           
+         </div>
+     </div>
+
+
+
+
+      <div class="btn" >
+        <!-- <input disabled="disabled" onclick="window.location.href='https://www.youtube.com/'"  id="submit"   value="Login" type="button"  class="submit_btn"  > -->
+        <!-- onclick="Redirect();" -->
+        <button   id="submit" class="submit_btn" disabled = "disabled"  >Login</button>
+        
+    </div>
+      <div class="buttom_nev">
+        <div class="button_aria">
+          <div class="singale"><a href="">Set New Password</a></div>
+          <div class="singale"><a href="">Sign Up</a></div>
+          <div class="singale"><a href="">Help</a></div>
+
+          
+
+        </div>
+        
+     
+          
+        
+      </div>
+      
+    </form>
+   
+  </div>
+  <span class="v-btn">Help/Feedback</span>
+  <footer class="footer_menu">
+    <div class="f_nenu">
+      <div class="fixd"> <a href="">Contact PrivateDelights</a></div>
+      <div class="fixd"><a href="">Blog</a></div>
+      <div class="fixd"><a href="">Twitter</a></div>
+      <div class="fixd"><a href="">Locations</a></div>
+      <div class="fixd"><a href="">Privacy Policy </a></div>
+      
+      <div class="fixd"><a href="">Terms </a></div>
+      
+
+
+
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    <div class="tage">
+      <p>© 2022 PrivateDelights.ch </p>
+    </div>
+  
+
+
+  </footer>
+  <script src="https://kit.fontawesome.com/ab583dd8ee.js" crossorigin="anonymous"></script>
+  <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
